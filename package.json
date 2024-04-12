@@ -1,0 +1,17 @@
+{
+  "name": "accessibility-checker-issue-1892",
+  "private": true,
+  "scripts": {
+    "server": "http-server",
+    "test": "achecker broken.txt",
+    "test-ok": "achecker ok.txt"
+  },
+  "dependencies": {
+    "http-server": "^14.1.1",
+    "accessibility-checker": "^3.1.68"
+  },
+  "volta": {
+    "node": "20.12.0"
+  },
+  "license": "MIT"
+}
