@@ -2,13 +2,13 @@
 
 Steps:
 - open 2 terminal windows
-  - in the first run `npm run server`
+  - in the first run `npm run server` (expected to run on port 8080)
   - in the second run `npm run test`
 - wait until the test is finished or you see `Navigation timeout of 30000 ms exceeded`
 
 Run `npm run test-ok` to verify that the test can pass when a lazily loaded iframe is visible.
 
-The only difference is that the broken test has : 
+Broken test contains a hidden lazy iframe:
 
 ```html
 <div style="display: none;">
@@ -16,7 +16,7 @@ The only difference is that the broken test has :
 </div>
 ```
 
-While the ok test other as :
+The ok test contains a visible lazy iframe:
 
 ```html
 <div>
